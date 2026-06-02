@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+  <title>Accueil - Communauté Baptiste Biblique</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(rgba(30,60,114,0.8), rgba(42,82,152,0.8)), url('https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=2070') center/cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    header p { margin: 10px 0 0; font-size: 1.2rem; font-style: italic; }
+    nav {
+      background: #0d2a50;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+    nav a { color: white; text-decoration: none; font-weight: 600; transition: 0.3s; }
+    nav a:hover, nav a.active { color: #ffd700; border-bottom: 2px solid #ffd700; }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e3c72;
+      border-left: 4px solid #ffd700;
+      padding-left: 12px;
+    }
+    .verset-du-jour {
+      background: linear-gradient(135deg, #ffd700, #ffec99);
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #1e3c72;
+      margin: 30px 0;
+    }
+    .grille-media {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+    .carte {
+      background: #f9fbfd;
+      padding: 20px;
+      border-radius: 10px;
+      border-top: 4px solid #2a5298;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .commentaires {
+      background: #f0f6ff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .commentaires input, .commentaires textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .commentaires button {
+      background: #2a5298;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .commentaires button:hover { background: #1e3c72; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Communauté Baptiste Biblique</h1>
+    <p>"La Bible seule, Christ seul, Foi seule" - RDC</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="doctrine.html">Doctrine</a>
+    <a href="culte.html">Cultes</a>
+    <a href="contact.html">Contact</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="musique.html">🎵 Musique</a>
+  <a href="temoignages.html" style="color:white; text-decoration:none; margin:0 15px; font-weight:bold; background:#25D366; padding:8px 15px; border-radius:6px">Témoignages</a>
+</nav>
+  </nav>
+
+  <div class="container">
+    <h2>Bienvenue chez nous</h2>
+    <p>Nous sommes une communauté qui aime Dieu, Sa Parole et Son peuple. Venez adorer avec nous et grandir dans la foi.</p>
+
+    <div class="verset-du-jour">
+      "Ta parole est une lampe à mes pieds, Et une lumière sur mon sentier."<br>
+      <strong>Psaumes 119:105</strong>
+    </div>
+    <div class="grille-media">
+  <div class="carte">
+    <h3>📖 La Bible en ligne</h3>
+    <p>Lisez les Écritures directement ici :</p>
+    <iframe src="https://www.bible.com/bible/191/JHN.1.LSG"></iframe>
+  </div>
+
+  <div class="carte">
+    <h3>🎥 Prédication récente</h3>
+    <p>Message : "Marcher par la foi"</p>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </div>
+
+  <div class="carte">
+    <h3>🎵 Louange</h3>
+    <p>Écoutez pendant votre méditation :</p>
+    <audio controls>
+      <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- NOUVEAU : Conférence en ligne -->
+  <div class="carte">
+    <h3>💻 Conférence en ligne</h3>
+    <p>Rejoignez nos cultes et études bibliques en direct</p>
+    <p><strong>Prochaine séance :</strong> Dimanche 9h00</p>
+    <a href="https://zoom.us/j/123456789" " style="display:inline-block; background:#2a5298; color:white; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:bold; margin-top:10px;">Rejoindre Zoom</a>
+    <small><br>* Colle ici ton lien Zoom, Meet ou Teams</small>
+  </div>
+  <!-- NOUVEAU : Actualités chrétiennes -->
+<div class="carte">
+  <h3>📰 Actualités chrétiennes</h3>
+  <p>Infos et événements de l’église</p>
+  <ul style="text-align:left; padding-left:20px; margin:10px 0;">
+    <li><strong>Dim 27 Avril :</strong> Culte spécial Pâques 8h30</li>
+    <li><strong>Sam 3 Mai :</strong> Séminaire couples 14h</li>
+    <li><strong>Tous les Mer :</strong> Étude biblique 17h30</li>
+  </ul>
+  <small>* Modifie ces infos chaque semaine</small>
+</div>
+
+<!-- NOUVEAU : Météo Lubumbashi -->
+<div class="carte">
+  <h3>🌤️ Météo Lubumbashi</h3>
+  <p>Pour planifier votre venue au culte</p>
+  <!-- Widget météo gratuit WeatherWidget.io -->
+  <a class="weatherwidget-io" href="https://forecast7.com/fr/n11d66d27/lubumbashi/" data-label_1="LUBUMBASHI" data-label_2="HAUT-KATANGA" data-theme="original" >LUBUMBASHI HAUT-KATANGA</a>
+  <script>
+ !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+</div>
+<!-- NOUVEAU : Statistiques -->
+<div class="carte">
+  <h3>📊 Statistiques de l’église</h3>
+  <p>Dieu fait grandir son œuvre</p>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; text-align:center; margin-top:15px;">
+    <div>
+      <div style="font-size:32px; font-weight:bold; color:#2a5298;">350+</div>
+      <div style="font-size:14px;">Membres</div>
+    </div>
+    <div>
+      <div style="font-size:32px; font-weight:bold; color:#2a5298;">12</div>
+      <div style="font-size:14px;">Cellules</div>
+    </div>
+    <div>
+      <div style="font-size:32px; font-weight:bold; color:#2a5298;">8</div>
+      <div style="font-size:14px;">Départements</div>
+    </div>
+    <div>
+      <div style="font-size:32px; font-weight:bold; color:#2a5298;">2015</div>
+      <div style="font-size:14px;">Année fondation</div>
+    </div>
+  </div>
+  <small style="display:block; margin-top:10px;">* Modifie les chiffres chaque trimestre</small>
+</div>
+
+<!-- NOUVEAU : Évaluation / Témoignage -->
+<div class="carte">
+  <h3>💬 Votre avis nous aide</h3>
+  <p>Laissez un témoignage ou une évaluation</p>
+  <form style="text-align:left; margin-top:15px;">
+    <input type="text" placeholder="Votre nom" style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+    <select style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+      <option>Note : 5 ⭐⭐</option>
+      <option>Note : 4 ⭐⭐</option>
+      <option>Note : 3 ⭐⭐</option>
+    </select>
+    <textarea placeholder="Votre témoignage ou suggestion..." rows="3" style="width:100%; padding:8px; border:1px solid #ddd; border-radius:4px;"></textarea>
+    <button type="button" onclick="alert('Merci pour votre message ! Nous le lirons bientôt.')" style="width:100%; background:#2a5298; color:white; border:none; padding:10px; border-radius:6px; margin-top:8px; cursor:pointer; font-weight:bold;">
+      Envoyer
+    </button>
+  </form>
+  <small>* Pour l’instant ça affiche juste "Merci". Plus tard on connecte à WhatsApp/Email</small>
+</div>
+
+  <!-- NOUVEAU : Recherche Google -->
+  <div class="carte">
+    <h3>🔍 Rechercher sur Google</h3>
+    <p>Besoin d’un verset ou d’une info ?</p>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+      <input type="text" name="q" placeholder="Tapez votre recherche..." style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; margin:10px 0;">
+      <button type="submit" style="background:#2a5298; color:white; border:none; padding:10px 20px; border-radius:6px; font-weight:bold; cursor:pointer; width:100%;">Recher</button>
+    </form>
+  </div>
+</div>
+
+    <div class="grille-media">
+      <div class="carte">
+        <h3>📖 La Bible en ligne</h3>
+        <p>Lisez les Écritures directement ici :</p>
+        <iframe src="https://www.bible.com/bible/191/JHN.1.LSG"></iframe>
+      </div>
+      <!-- Évaluation / Témoignage WhatsApp -->
+<div class="carte">
+  <h3>💬 Votre avis nous aide</h3>
+  <p>Laissez un témoignage sur WhatsApp</p>
+  <form onsubmit="envoyerWhatsApp(event)" style="text-align:left; margin-top:15px;">
+    <input type="text" id="nom" placeholder="Votre nom" required style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+    <select id="note" style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+      <option value="5 ⭐⭐⭐⭐⭐">Note : 5 ⭐⭐</option>
+      <option value="4 ⭐⭐">Note : 4 ⭐⭐</option>
+      <option value="3 ⭐⭐">Note : 3 ⭐⭐</option>
+      <option value="2 ⭐⭐">Note : 2 ⭐⭐</option>
+      <option value="1 ⭐">Note : 1 ⭐</option>
+    </select>
+    <textarea id="message" placeholder="Votre témoignage ou suggestion..." rows="3" required style="width:100%; padding:8px; border:1px solid #ddd; border-radius:4px;"></textarea>
+    <button type="submit" style="width:100%; background:#25D366; color:white; border:none; padding:12px; border-radius:6px; margin-top:8px; cursor:pointer; font-weight:bold; font-size:16px;">
+      📲 Envoyer sur WhatsApp
+    </button>
+  </form>
+  <small style="display:block; margin-top:8px;">Clique → ça ouvre WhatsApp avec ton message prêt</small>
+</div>
+
+<script>
+function envoyerWhatsApp(event) {
+  event.preventDefault();
+  var nom = document.getElementById('nom').value;
+  var note = document.getElementById('note').value;
+  var msg = document.getElementById('message').value;
+  
+  var texte = "🙏 Nouveau témoignage CBB%0A%0A";
+  texte += "Nom : " + nom + "%0A";
+  texte += "Note : " + note + "%0A";
+  texte += "Message : " + msg;
+  
+  var url = "https://wa.me/243997015701?text=" + texte;
+  window.open(url, '_blank');
+}
+</script>
+<!-- Carte Galerie Photos -->
+<div class="carte">
+  <h3>📸 Notre église en images</h3>
+  <p>Quelques moments de grâce</p>
+  
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:12px;">
+    <img src="images/eglise1.jpg" alt="Façade église" style="width:100%; height:120px; object-fit:cover; border-radius:6px;">
+    <img src="images/culte2.jpg" alt="Culte dimanche" style="width:100%; height:120px; object-fit:cover; border-radius:6px;">
+  </div>
+  
+  <small style="display:block; margin-top:8px;">* Remplace eglise1.jpg et culte2.jpg par tes noms de photos</small>
+</div>
+<!-- Demande de Prière WhatsApp -->
+<div class="carte">
+  <h3>🙏 Demande de prière</h3>
+  <p>L’église prie pour vous</p>
+  <form onsubmit="envoyerPriere(event)" style="text-align:left; margin-top:15px;">
+    <input type="text" id="nomPriere" placeholder="Votre nom ou Anonyme" required style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+    <select id="typePriere" style="width:100%; padding:8px; margin-bottom:8px; border:1px solid #ddd; border-radius:4px;">
+      <option value="Santé">🩺 Santé / Guérison</option>
+      <option value="Travail">💼 Travail / Finances</option>
+      <option value="Famille">👨‍👩‍👧‍👦 Famille / Mariage</option>
+      <option value="Études">📚 Études</option>
+      <option value="Autre">🙏 Autre sujet</option>
+    </select>
+    <textarea id="sujetPriere" placeholder="Partagez votre sujet de prière..." rows="3" required style="width:100%; padding:8px; border:1px solid #ddd; border-radius:4px;"></textarea>
+    <label style="font-size:13px; display:block; margin:8px 0;">
+      <input type="checkbox" id="anonyme"> Rester anonyme dans la prière publique
+    </label>
+    <button type="submit" style="width:100%; background:#25D366; color:white; border:none; padding:12px; border-radius:6px; cursor:pointer; font-weight:bold; font-size:16px;">
+      📲 Envoyer la demande
+    </button>
+  </form>
+  <small style="display:block; margin-top:8px;">Confidentiel. L’équipe d’intercession prie pour vous.</small>
+</div>
+
+<script>
+function envoyerPriere(event) {
+  event.preventDefault();
+  var nom = document.getElementById('nomPriere').value;
+  var type = document.getElementById('typePriere').value;
+  var sujet = document.getElementById('sujetPriere').value;
+  var anonyme = document.getElementById('anonyme').checked ? "Oui - Anonyme" : "Non";
+  
+  var texte = "🙏 NOUVELLE DEMANDE DE PRIÈRE CBB%0A%0A";
+  texte += "Nom : " + nom + "%0A";
+  texte += "Sujet : " + type + "%0A";
+  texte += "Anonyme : " + anonyme + "%0A%0A";
+  texte += "Détails : " + sujet;
+  
+  var url = "https://wa.me/243997015701?text=" + texte;
+  window.open(url, '_blank');
+}
+</script>
+
+      <div class="carte">
+        <h3>🎥 Prédication récente</h3>
+        <p>Message : "Marcher par la foi"</p>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      </div>
+
+      <div class="carte">
+        <h3>🎵 Louange</h3>
+        <p>Écoutez pendant votre méditation :</p>
+        <audio controls>
+          <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+          Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="commentaires">
+      <h2>💬 Espace de témoignages</h2>
+      <p>Partagez ce que Dieu fait dans votre vie :</p>
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <textarea rows="4" placeholder="Votre témoignage ou prière..." required></textarea>
+        <button type="submit">Publier</button>
+      </form>
+      <small>* Pour l’instant les commentaires ne s’enregistrent pas. On ajoutera la base de données après.</small>
+    </div>
+  </div>
+</body>
+</html>
+<h2 style="margin-top:40px">🎵 Cantiques pour la louange</h2>
+
+<h3>Français - Recueil Classique</h3>
+<iframe width="100%" height="315" 
+src="https://www.youtube.com/embed/videoseries?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf&rel=0&modestbranding=1" 
+title="Cantiques Français" frameborder="0" allowfullscreen 
+style="border-radius:12px; margin-bottom:20px"></iframe>
+
+<h3>English - Christian Hymns</h3>
+<iframe width="100%" height="315" 
+src="https://www.youtube.com/embed/videoseries?list=PL9tY0BWXOZFtOxE5-4QKecchbq0h8UQ8J&rel=0&modestbranding=1" 
+title="English Hymns" frameborder="0" allowfullscreen 
+style="border-radius:12px; margin-bottom:20px"></iframe>
+
+<h3>Swahili - Nyimbo za Kumwabudu Mungu</h3>
+<iframe width="100%" height="315" 
+src="https://www.youtube.com/embed/videoseries?list=PL2F8B1A4B1A4B1A4B&rel=0&modestbranding=1" 
+title="Nyimbo za Kiswahili" frameborder="0" allowfullscreen 
+style="border-radius:12px"></iframe>
+<script>
+  alert("Salut, ton site marche !");
+</script>
+</body>

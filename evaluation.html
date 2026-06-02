@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évaluation - Communauté Baptiste Biblique</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h1 { color: #2c3e50; text-align: center; }
+    label { display: block; margin-top: 15px; font-weight: bold; color: #333; }
+    input, textarea, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; box-sizing: border-box; }
+    button { width: 100%; padding: 15px; margin-top: 25px; background: #25D366; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; }
+    button:hover { background: #128C7E; }
+    .note { font-size: 12px; color: #666; margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Formulaire d'Évaluation</h1>
+    <p style="text-align:center; color:#666;">Communauté Baptiste Biblique de Lubumbashi</p>
+    
+    <form id="evalForm">
+      <label>Nom complet *</label>
+      <input type="text" id="nom" required>
+      
+      <label>Téléphone WhatsApp *</label>
+      <input type="tel" id="tel" placeholder="+243..." required>
+      
+      <label>Notez le culte d'aujourd'hui *</label>
+      <select id="note" required>
+        <option value="">-- Choisissez --</option>
+        <option value="5 - Excellent">5 - Excellent ⭐⭐</option>
+        <option value="4 - Très bien">4 - Très bien ⭐⭐</option>
+        <option value="3 - Bien">3 - Bien ⭐⭐</option>
+        <option value="2 - Moyen">2 - Moyen ⭐⭐</option>
+        <option value="1 - À améliorer">1 - À améliorer ⭐</option>
+      </select>
+      
+      <label>Qu'avez-vous aimé ?</label>
+      <textarea id="aime" rows="3"></textarea>
+      
+      <label>Suggestions / Remarques</label>
+      <textarea id="suggestion" rows="3"></textarea>
+      
+      <button type="submit">📤 Envoyer sur WhatsApp</button>
+      <p class="note">Vos réponses seront envoyées directement au +243 997 015 701</p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('evalForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nom = document.getElementById('nom').value;
+      const tel = document.getElementById('tel').value;
+      const note = document.getElementById('note').value;
+      const aime = document.getElementById('aime').value;
+      const suggestion = document.getElementById('suggestion').value;
+      
+      const message = `*Nouvelle Évaluation CBB Lubumbashi*%0A%0A` +
+        `*Nom:* ${nom}%0A` +
+        `*Téléphone:* ${tel}%0A` +
+        `*Note:* ${note}%0A` +
+        `*A aimé:* ${aime || 'Aucune réponse'}%0A` +
+        `*Suggestion:* ${suggestion || 'Aucune'}`;
+      
+      const numeroWhatsApp = '243997015701';
+      const url = `https://wa.me/${numeroWhatsApp}?text=${message}`;
+      
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>

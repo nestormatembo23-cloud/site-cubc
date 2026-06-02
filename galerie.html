@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie - Église CBB Lubumbashi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .galerie-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .galerie-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📸 Galerie Photos</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="culte.html">Culte</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carte">
+      <h2>Notre église en images</h2>
+      <p>Des moments de louange, prière et communion fraternelle</p>
+      
+      <div class="galerie-grid">
+        
+      </div>
+      
+    
+    </div>
+  </main><div class="galerie-grid">
+  <img src="images/IMG20250824113939.jpg" alt="Photo 1">
+  <img src="images/IMG20250913134106.jpg" alt="Photo 2">
+  <img src="images/IMG20250913142735_01.jpg" alt="Photo 3">
+  <img src="images/IMG20250914093535.jpg" alt="Photo 4">
+  <img src="images/IMG20250914140939_01.jpg" alt="Photo 5">
+  <img src="images/IMG20250914162813.jpg" alt="Photo 6">
+</div>
+
+  <footer>
+    <p>&copy; 2026 Église CBB Lubumbashi</p>
+  </footer>
+</body>
+</html>

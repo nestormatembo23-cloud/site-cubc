@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+<title>Musique - CBB Lubumbashi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial; padding:20px; background:#f5f5f5}
+h2{text-align:center; color:#2c3e50}
+h3{color:#34495e; margin-top:30px}
+iframe{width:100%; height:315px; border-radius:12px; margin-bottom:20px; border:none}
+a.btn{display:inline-block; padding:10px 20px; background:#2c3e50; color:white; text-decoration:none; border-radius:8px; margin-bottom:20px}
+</style>
+</head>
+<body>
+
+<a href="index.html" class="btn">← Retour Accueil</a>
+<h2>🎵 Rubrique Musique - Cantiques</h2>
+
+<h3>🇫🇷 Français - Cantiques Classiques</h3>
+<iframe src="https://www.youtube.com/embed/videoseries?list=PLX7ZdWXQkgJK3XWcC0Yh4f7Z6bF7Z6bF7&rel=0&modestbranding=1" allowfullscreen></iframe>
+
+<h3>🇬🇧 English - Top Christian Hymns</h3>
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL8F6B0A0A0A0A0A0A&rel=0&modestbranding=1" allowfullscreen></iframe>
+
+<h3>🇹🇿 Swahili - Nyimbo za Injili</h3>
+<iframe src="https://www.youtube.com/embed/videoseries?list=PL4E8B0A0A0A0A0A0A&rel=0&modestbranding=1" allowfullscreen></iframe>
+
+</body>
+</html>
+<h3>🔴 Conférence Zoom - Culte en direct</h3>
+
+<!-- Bouton qui ouvre Zoom -->
+<a href="https://zoom.us/j/TON_ID_REUNION?pwd=TON_CODE" target="_blank" 
+style="display:block; padding:18px; background:#2D8CFF; color:white; text-align:center; text-decoration:none; border-radius:12px; font-size:18px; font-weight:bold; margin-bottom:20px">
+📹 Rejoindre la conférence Zoom
+</a>
+
+<p style="text-align:center; color:#666">ID: TON_ID_REUNION | Code: TON_CODE</p>
+
+<!-- Intégrer Zoom direct sur la page - optionnel -->
+<iframe src="https://zoom.us/wc/TON_ID_REUNION/join" 
+width="100%" height="500" frameborder="0" 
+allow="camera; microphone; fullscreen" 
+style="border-radius:12px; display:none" id="zoomFrame"></iframe>
+
+<button onclick="document.getElementById('zoomFrame').style.display='block'; this.style.display='none'" 
+style="padding:12px; background:#27ae60; color:white; border:none; border-radius:8px; width:100%">
+▶️ Lancer Zoom dans la page
+</button>
