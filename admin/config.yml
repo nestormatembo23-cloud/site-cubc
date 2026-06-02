@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+    - name: "pages"
+    label: "Pages du site"
+    files:
+            - file: "index.html"
+        label: "Page Accueil"
+        name: "home"
+        fields:
+                    - {label: "Titre principal", name: "title", widget: "string"}
+                    - {label: "Texte d'accueil", name: "subtitle", widget: "text"}
