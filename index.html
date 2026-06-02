@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
   <head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <title>Accueil - Communauté Baptiste Biblique</title>
+  <style>
+<head><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Communauté Baptiste Biblique</title>
+  <style>
+  <meta charset="UTF-8"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil</title>
-</head>
   <title>Accueil - Communauté Baptiste Biblique</title>
   <style>
     body {
@@ -395,6 +402,18 @@ src="https://www.youtube.com/embed/videoseries?list=PL2F8B1A4B1A4B1A4B&rel=0&mod
 title="Nyimbo za Kiswahili" frameborder="0" allowfullscreen 
 style="border-radius:12px"></iframe>
 <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
   alert("Salut, ton site marche !");
 </script>
 </body>
